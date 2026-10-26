@@ -37,6 +37,26 @@ Double-click run_inspection.bat (Windows).
 Paste the absolute path to your Icepak .aedt file when prompted.
 
 
+---
+
+### 2. `icepak.py`（配置区修改）
+
+代码的主体逻辑不用动，只需要把最开头的注释和默认值改一下，让它看起来更通用：
+
+```python
+# =====================================================================
+# 🌟 User Configuration (USER CONFIGURATION)
+# Modify these settings to match your LLM provider.
+# =====================================================================
+
+# 1. LLM API Settings (e.g., OpenAI, DeepSeek, Moonshot)
+# Default is set to OpenAI format. Update URL and model name accordingly.
+MY_API_KEY = "sk-your_api_key_here"
+MY_BASE_URL = "https://api.openai.com/v1" 
+MY_MODEL_NAME = "gpt-4o"                  
+
+# =====================================================================
+## License\nThis project is licensed under the MIT License.
 
 
 ### Quick Reference for Popular LLMs
